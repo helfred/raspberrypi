@@ -26,7 +26,7 @@ cat - > /etc/dnsmasq.conf <<DNSMASQCONF
 # http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq.conf.example
 
 # Set up your local domain here
-domain=defcon.local
+domain=defcon.net
 resolv-file=/etc/resolv.dnsmasq
 min-port=4096
 server=212.242.40.3
