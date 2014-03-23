@@ -8,7 +8,7 @@ set -e
 # Usage: $ sudo ./raspberrypi_dnsmasq
 #
 # Net install:
-#   $ curl https://raw.github.com/helfred/raspberrypi/master/dnsmasq_server | sudo sh
+#   $ curl https://raw.github.com/helfred/raspberrypi/master/roles/dnsmasq_server | sudo sh
 #
 # Must be run as root
 if [[ `whoami` != "root" ]]
