@@ -8,11 +8,7 @@ set -e
 # Usage: $ sudo ./raspberrypi_dnsmasq
 #
 # Net install:
-<<<<<<< HEAD
 #   $ curl https://raw.github.com/helfred/raspberrypi/master/dnsmasq_server.sh | sudo sh
-=======
-#   $ curl https://raw.github.com/helfred/raspberrypi/master/dnsmasq_server | sudo sh
->>>>>>> 176a8115d04da81477f070a0c8fa698e6530aae8
 #
 # Must be run as root
 if [[ `whoami` != "root" ]]
@@ -59,8 +55,6 @@ echo $URLS | xargs -I^ -P50 dig @127.0.0.1 grep time | awk /time/'{sum+=$4} END 
 echo $URLS | xargs -I^ -P50 dig @127.0.0.1 grep time | awk /time/'{sum+=$4} END { print "average response = ", sum/NR,"ms"}'
 echo $URLS | xargs -I^ -P50 dig @127.0.0.1 grep time | awk /time/'{sum+=$4} END { print "average response = ", sum/NR,"ms"}'
 
-<<<<<<< HEAD
+
 echo 'Installation complete. Enjoy!'
-=======
-echo 'Installation complete. Enjoy!'
->>>>>>> 176a8115d04da81477f070a0c8fa698e6530aae8
+
